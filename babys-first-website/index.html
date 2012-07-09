@@ -56,7 +56,9 @@
 
     <div class="grid_8 pull_1"> <!-- Is there a reason I couldn't add the "content" class with this div? I had to nest another.-->
       <!-- GALEN: There's no reason why you couldn't do a single div with class="content grid_8 pull_1" -->
-      <!-- GALEN: Also, good job with the pull_1. I almost never use push/pull/prefix/suffix. There just aren't as many good use cases for them. -->
+      <!-- GALEN: Did you mean to add a pull_1 here? It's making it out of line with the normal container of the site. -->
+      <!-- GALEN: I almost never use push/pull/prefix/suffix. There just aren't as many good use cases for them. -->
+      
       <div class="content">
         <h1>This is called a placeholder</h1>
         <!-- GALEN: The <h1> is the 2nd most important SEO tag on the page after the <title>. Make sure the <h1> is the most important line on your page.
@@ -70,9 +72,67 @@
     <div class="grid_4">
       <div class="content">
         <h2>About Me</h2>
-        <p>Cameron Martin resides in the greater Philadelphia area with his wife, Elizabeth, and their two cats. In addition to website and graphic design, Cameron enjoys writing short fiction and poetry.</p>
+        <p><strong>Cameron Martin</strong> resides in the greater <em>Philadelphia</em> area with his wife, Elizabeth, and their two cats. In addition to website and graphic design, Cameron enjoys writing short fiction and poetry.</p>
+        <!-- Here are <strong> and <em> tags  -->
       </div>
     </div>
+
+<style type="text/css" media="screen">
+  .blue {
+    background: blue;
+    height: 200px;
+  }
+  .red {
+    background: red;
+    height: 200px;
+  }
+  .green {
+    background: green;
+    height: 100px;
+  }
+
+</style>
+    <div class="blue grid_12">
+      
+      <!-- <div class="red grid_12">
+        <p>When you put a grid_12 within a grid_12, you must add the classes "alpha" and "omega" so the margins of the inner grid_12 don't knock things out of line</p>
+      </div> -->
+      <p>When you put grids within a grid and the inner grids add up to the container grid (3+3+3+3=12), then you're going to need to assign "alpha" and "omega" classes to the first and last div so the outer-most margins of the first and last grid_3s don't knock the last div down to the next line.</p>
+      
+      <div class="green grid_3 alpha">
+      </div>
+
+      <div class="green grid_3">
+      </div>
+
+      <div class="green grid_3">
+      </div>
+
+      <div class="green grid_3 omega">
+      </div>
+    </div>
+
+    <div class="red grid_12">
+      
+      <!-- <div class="red grid_12">
+        <p>When you put a grid_12 within a grid_12, you must add the classes "alpha" and "omega" so the margins of the inner grid_12 don't knock things out of line</p>
+      </div> -->
+      
+      <div class="green grid_3">
+        <p>Uh oh, I forgot the alpha for this div</p>
+      </div>
+
+      <div class="green grid_3">
+      </div>
+
+      <div class="green grid_3">
+      </div>
+
+      <div class="green grid_3">
+        <p>Uh oh, I forgot the omega for this div</p>
+      </div>
+    </div>
+
 
   </div> <!--End of Container_12 div-->
 
