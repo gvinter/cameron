@@ -1,0 +1,88 @@
+/*Test IDs for visualizing Grid system */
+#green {background:green;}
+#red {background:red;}
+#blue {background:blue;}
+#yellow {background:yellow;}
+
+/* UNIVERSAL STYLING */
+
+* {font-family:arial}  /* I have a feeling that universally setting font with a wildcard like this is prob bad - should this just be handled case by case? */
+body {background:#D8D8D8;}
+a, li {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+
+/* ID's */
+
+/* I know that I worked WAAAY harder than I needed to in order to position these four ID's where I wanted them. Any advice? */
+#headshot{
+position:relative;
+left:-90px;
+top:1px;
+z-index:2;
+}
+
+#title{
+position:relative;
+left:100px;
+top:-170px;
+display:block;
+font-family:helvetica;
+font-size:65px;
+font-weight:700;
+letter-spacing:6px;
+text-shadow: 0.1em 0.1em 0.2em gray;
+z-index:1;
+}
+
+#subtitle {
+position:relative;
+left:50px;
+top:-170px;
+display:block;
+font-size:25px;
+font-style:italic;
+text-align:center;
+z-index:0;
+}
+
+#header-box {
+height:200px;
+padding:5px;
+background-color:#F8F8F8;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+
+/*CLASSES*/
+.content
+{
+background-color:#F8F8F8;
+-moz-border-radius: 15px;
+border-radius: 15px;
+padding:25px;
+}
+
+.nav-box li{
+position:relative;
+top:20px;
+text-align:center;
+display:block;
+margin:10px;
+padding:10px;
+background-color:#F8F8F8;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.footer
+{
+background-color:#F8F8F8;
+-moz-border-radius: 15px;
+border-radius: 15px;
+padding:2px;
+}
+
+.footer:last-child{text-align:center;}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- HTML doctype, HOTT! -->
+<html>
+
+<head>
+  <!-- Correcto-mundo! -->
+    <title>Baby's First Website</title>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="960.css" />
+</head>
+
+  <!-- GALEN: Reading code is 100x easier when you intent like you're OCD. So you'll see below that
+  I've just fixed some spacing (indent = 2 spaces) -->
+
+  <header><!-- GALEN: the <header> should be within the <body> -->
+
+    <div class="container_12">
+    <!-- GALEN: Here, you could have given the header a class of container_12 and gotten rid of the extra div of
+    the current container_12 div. -->
+
+      <div class="grid_9">
+
+        <div id="header-box">
+          <span id="headshot"><img src="http://i1173.photobucket.com/albums/r587/cameronjomartin/Headshot200.png" border="0" alt="Photobucket"></span>
+          <!-- GALEN: I don't like using spans unless they're wrapped in <p> tags because of their position/display defaults. In this case, I would
+          give the img tag an ID of headshot instead of adding a span to it. -->
+          <span id="title">Cameron Martin</span>
+          <span id="subtitle">"Using Helvetica gives me that special tingle"</span>
+          <!-- GALEN: The #title and #subtitle should definitely be <p> tags, not <span>s. I'd think about using <span>s only within <p>s. <p>s should definitely
+          be used the most for text tags. -->
+        </div>
+
+      </div><!--End Grid_9-->
+
+      <div class="grid_3">
+        <ul class="nav-box">
+          <li><a href="/link">Home</a></li>
+          <!-- GALEN: Instead of "/link", I usually just put "#" in the href for links that aren't ready to go anwhere
+          yet. That way when I accidentally click them they don't 404 on me. That's just a preference thing though. -->
+          <li><a href="/link">Portfolio</a></li>
+          <li><a href="/link">Contact</a></li>
+        </ul>
+        <!-- GALEN: Good job with the UL/LIs. -->
+      </div><!--End Grid_3-->
+
+    </div> <!--End of Container_12 div-->
+
+  </header>
+
+<br/>
+<br/>
+
+<body>
+
+  <div class="container_12">
+
+    <div class="grid_8 pull_1"> <!-- Is there a reason I couldn't add the "content" class with this div? I had to nest another.-->
+      <!-- GALEN: There's no reason why you couldn't do a single div with class="content grid_8 pull_1" -->
+      <!-- GALEN: Also, good job with the pull_1. I almost never use push/pull/prefix/suffix. There just aren't as many good use cases for them. -->
+      <div class="content">
+        <h1>This is called a placeholder</h1>
+        <!-- GALEN: The <h1> is the 2nd most important SEO tag on the page after the <title>. Make sure the <h1> is the most important line on your page.
+        Some would say "Cameron Martin" is the most important line. Some would say your headline is ("Using Helvetica...") because it's probably what sets you apart.
+        Or maybe this is the correct place to put it. It's a strategy thing just to think about. -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere blandit risus. In hac habitasse platea dictumst. In non leo est, a ullamcorper libero. Suspendisse egestas, lectus non pharetra scelerisque, nisi dui laoreet odio, nec dignissim libero neque eu dui. Duis dapibus ornare mauris ac tristique. Quisque malesuada pulvinar erat, ac cursus ipsum eleifend consectetur. Donec eget sapien velit. Aliquam hendrerit molestie turpis, vel iaculis lorem dapibus id. Nullam varius, tellus quis fringilla laoreet, urna ante convallis elit, et mollis libero ipsum eu justo. Duis venenatis risus ut ipsum cursus semper. Cras quis suscipit ipsum. In nunc justo, feugiat sed cursus vel, fringilla vel dolor. Fusce imperdiet sodales mauris ornare pellentesque. Aliquam erat volutpat. Praesent fermentum pretium lectus sed egestas. Nunc eu lorem posuere est dictum fringilla.
+        Ut a ligula sed orci dapibus porttitor. Donec nec libero eu felis auctor egestas id sed libero.</p>
+      </div>
+    </div>
+
+    <div class="grid_4">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>Cameron Martin resides in the greater Philadelphia area with his wife, Elizabeth, and their two cats. In addition to website and graphic design, Cameron enjoys writing short fiction and poetry.</p>
+      </div>
+    </div>
+
+  </div> <!--End of Container_12 div-->
+
+  <br/>
+  <br/>
+  <!-- GALEN: Avoid using <br />s unless you absolutely have to (which is rare). Instead, just give the footer a margin-top: ##px instead.  -->
+
+  <footer><!-- GALEN: Same as with the header, you could just give the footer a class of container_12 instead of adding an extra div -->
+    <div class="container_12">
+      <div class="footer">
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a>  This work by Cameron Martin is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+      </div>
+    </div> <!--End of Container_12 div-->
+  </footer>
+
+</body>
+
+</html>
