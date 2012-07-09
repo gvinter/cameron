@@ -86,3 +86,15 @@ padding:2px;
 
 .footer:last-child{text-align:center;}
 
+.blue {
+  background: blue;
+  height: 200px;
+}
+.red {
+  background: red;
+  height: 200px;
+}
+.green {
+  background: green;
+  height: 100px;
+}
